@@ -1,2 +1,4 @@
-# csd-340
-Course Work for CSD 340 Web Development with HTML and CSS
+# H1 CSD 340 Web Development with HTML and CSS
+# H2 Contributors
+..* Professor Sue Sampson
+..* Jeff Pedersen
