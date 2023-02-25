@@ -1,0 +1,196 @@
+body {
+    background-color: lightslategray;
+}
+
+header {
+    box-shadow: 0 12px 12px 0px rgba(0, 0, 0, 0.355);
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: cornflowerblue;
+    height: 100px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#headliner {
+    box-shadow: 0 12px 12px 0px rgba(0, 0, 0, 0.355);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.313);
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.515);
+    font-size: 40px;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.515);
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+    text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.515);
+}
+
+img {
+    max-width: 100%;
+    padding-top: 30px;
+  }
+
+#container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;   
+    padding: 5px;
+}
+
+.image-container {   
+    width: 380px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.card {
+    border: 1px solid black;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    box-shadow: 0 12px 12px 0px rgba(0, 0, 0, 0.355);
+    transition: 0.3s;
+    flex-basis: 33%;
+    padding: 24px;
+    min-width: 380px;
+    max-width: 380px;
+}
+
+.card-title {
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.313);
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.342);
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.351);
+    height: 65px;
+    width: auto;
+}
+
+.card-content {
+    display: block;
+    justify-content: space-between;
+}
+
+.card:hover {
+    background-color: lightslategray;
+    color: white;
+    box-shadow: 0px 0px 60px 60px rgba(0, 200, 255, 0.599);
+}
+
+.card:hover .card-title {
+    box-shadow: 6px 8px 10px rgba(0, 0, 0, 0.351);
+}
+
+header:hover #headliner h1, .card:hover h2, .card:hover h3 {
+    color: black;
+}
+
+header:hover {
+    background-color: lightslategray;
+    box-shadow: 0px 0px 60px 60px rgba(0, 200, 255, 0.599);
+}
+
+.column {
+    flex-basis: 33.33%;
+    height: auto; /* you can adjust the height to fit your design */
+}
+
+ul {
+    background-color: rgba(0, 0, 0, 0.313);
+    border-radius: 10px;
+    border: 1px solid black;
+    padding-left: 40px; 
+    padding-top: 20px;
+    padding-bottom: 20px; 
+}
+ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+ 
+}
+
+ul li a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+ul li a:visited {
+    color: white;
+}
+
+ul li a:hover {
+    color: rgba(0, 200, 255, 0.599);
+}
+
+
+@media screen and (max-width: 468px) {
+    #container {
+        flex-direction: column;
+    }
+
+    .card {
+        flex-basis: 100%;
+    }
+}  
+
+.full-width {
+    width: 100%;
+    height: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.centered-button {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 60px;
+    font-size: 26px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.313);
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.342);
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.351);
+}
+
+input[type="submit"][value="Send Message"] {
+    color: rgb(255, 255, 255);
+    text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.515);
+    padding: 10px 20px;
+  }
+
+  ::-webkit-input-placeholder { /* WebKit browsers */
+    color: cornflowerblue;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: cornflowerblue;
+    opacity: 1;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: cornflowerblue;
+    opacity: 1;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: cornflowerblue;
+  }
+  ::placeholder { /* Modern browsers */
+    color: cornflowerblue;
+  }
+
+input[type="text"],
+input[type="email"] {
+  padding-left: 15px;
+}
