@@ -1,3 +1,10 @@
+body, div, h1, form, fieldset, input, textarea {
+	margin: 0; padding: 0; border: 0; outline: none;
+}
+html {
+	height: 100%;
+}
+
 body {
     background-color: lightslategray;
 }
@@ -17,6 +24,9 @@ header {
     box-shadow: 0 12px 12px 0px rgba(0, 0, 0, 0.355);
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.313);
+    margin-top: 10px;
+    height: 60px;
+    padding-top: 10px;
 }
 
 h1 {
@@ -28,6 +38,7 @@ h1 {
 h2 {
     color: rgb(255, 255, 255);
     text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.515);
+    margin-top: 0;
 }
 
 h3 {
@@ -44,7 +55,7 @@ img {
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-between;   
-    padding: 5px;
+    padding: 60px 0px 0px 0px;
 }
 
 .image-container {   
@@ -61,8 +72,10 @@ img {
     transition: 0.3s;
     flex-basis: 33%;
     padding: 24px;
-    min-width: 380px;
-    max-width: 380px;
+    min-width: 403px;
+    max-width: 403px;
+    margin-bottom: 60px;
+
 }
 
 .card-title {
@@ -86,6 +99,8 @@ img {
     background-color: lightslategray;
     color: white;
     box-shadow: 0px 0px 60px 60px rgba(0, 200, 255, 0.599);
+    transition: all 0.5s ease-in-out;
+    filter: grayscale(100%);
 }
 
 .card:hover .card-title {
@@ -99,6 +114,7 @@ header:hover #headliner h1, .card:hover h2, .card:hover h3 {
 header:hover {
     background-color: lightslategray;
     box-shadow: 0px 0px 60px 60px rgba(0, 200, 255, 0.599);
+    transition: all 0.5s ease-in-out;
 }
 
 .column {
@@ -133,6 +149,7 @@ ul li a:visited {
 
 ul li a:hover {
     color: rgba(0, 200, 255, 0.599);
+    transition: all 0.5s ease-in-out;
 }
 
 
@@ -170,6 +187,7 @@ input[type="submit"][value="Send Message"] {
     color: rgb(255, 255, 255);
     text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.515);
     padding: 10px 20px;
+    margin-bottom: 60px;
   }
 
   ::-webkit-input-placeholder { /* WebKit browsers */
@@ -193,4 +211,20 @@ input[type="submit"][value="Send Message"] {
 input[type="text"],
 input[type="email"] {
   padding-left: 15px;
+}
+
+#form-title {
+    margin-top: 20px;
+}
+
+.image-container img {
+    /* set initial filter to grayscale */
+    filter: grayscale(0%);
+    /* set transition property to create a smooth effect */
+    transition: all 0.5s ease-in-out;
+}
+  
+.image-container img:hover {
+    /* change filter to remove grayscale effect on hover */
+    filter: grayscale(0%);
 }
