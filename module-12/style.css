@@ -1,15 +1,40 @@
-body, div, h1, form, fieldset, input, textarea {
+
+body, div, h1, form, fieldset, input, textarea 
+{
 	margin: 0; padding: 0; border: 0; outline: none;
 }
-html {
+html 
+{
 	height: 100%;
 }
 
-body {
+body 
+{
     background-color: lightslategray;
 }
 
-header {
+h1 
+{
+    color: rgb(0, 0, 0);
+    text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.515);
+    font-size: 40px;
+}
+
+h2 
+{
+    color: rgb(0, 0, 0);
+    text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.515);
+    margin-top: 0;
+}
+
+h3 
+{
+    color: rgb(255, 255, 255);
+    text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.515);
+}
+
+header 
+{
     box-shadow: 0 12px 12px 0px rgba(0, 0, 0, 0.355);
     border-radius: 10px;
     border: 1px solid black;
@@ -20,7 +45,69 @@ header {
     text-align: center;
 }
 
-#headliner {
+header:hover 
+{
+    background-color: lightslategray;
+    box-shadow: 0px 0px 60px 60px rgba(0, 200, 255, 0.599);
+    transition: all 0.5s ease-in-out;
+}
+
+img 
+{
+    max-width: 100%;
+    padding-top: 30px;
+}
+
+input[type="submit"][value="Send Message"] 
+{
+    color: black;
+    text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.515);
+    padding: 10px 20px;
+    margin-bottom: 60px;
+}
+
+input[type="submit"][value="Send Message"]:hover 
+{
+    color: black;
+}
+
+input[type="text"], input[type="email"] 
+{
+  padding-left: 15px;
+}
+
+ul 
+{
+    background-color: rgba(0, 0, 0, 0.313);
+    border-radius: 10px;
+    border: 1px solid black;
+    padding-left: 40px; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style: none; 
+}
+
+ul li 
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#container 
+{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;   
+    padding: 60px 0px 0px 0px;
+}
+
+#form-title 
+{
+    margin-top: 20px;
+}
+
+#headliner 
+{
     box-shadow: 0 12px 12px 0px rgba(0, 0, 0, 0.355);
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.313);
@@ -29,42 +116,8 @@ header {
     padding-top: 10px;
 }
 
-h1 {
-    color: rgb(255, 255, 255);
-    text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.515);
-    font-size: 40px;
-}
-
-h2 {
-    color: rgb(255, 255, 255);
-    text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.515);
-    margin-top: 0;
-}
-
-h3 {
-    color: rgb(255, 255, 255);
-    text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.515);
-}
-
-img {
-    max-width: 100%;
-    padding-top: 30px;
-  }
-
-#container {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between;   
-    padding: 60px 0px 0px 0px;
-}
-
-.image-container {   
-    width: 380px;
-    height: 300px;
-    overflow: hidden;
-}
-
-.card {
+.card 
+{
     border: 1px solid black;
     background-color: cornflowerblue;
     border-radius: 10px;
@@ -75,10 +128,29 @@ img {
     min-width: 403px;
     max-width: 403px;
     margin-bottom: 60px;
-
 }
 
-.card-title {
+.card-content 
+{
+    display: block;
+    justify-content: space-between;
+}
+
+.card:hover 
+{
+    background-color: lightslategray;
+    color: white;
+    box-shadow: 0px 0px 60px 60px rgba(0, 200, 255, 0.599);
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover img 
+{
+    filter: grayscale(100%);
+}
+
+.card-title 
+{
     border-radius: 10px;
     text-align: center;
     font-size: 2em;
@@ -90,88 +162,29 @@ img {
     width: auto;
 }
 
-.card-content {
-    display: block;
-    justify-content: space-between;
-}
-
-.card:hover {
-    background-color: lightslategray;
-    color: white;
-    box-shadow: 0px 0px 60px 60px rgba(0, 200, 255, 0.599);
-    transition: all 0.5s ease-in-out;
-    filter: grayscale(100%);
-}
-
-.card:hover .card-title {
+.card:hover .card-title 
+{
     box-shadow: 6px 8px 10px rgba(0, 0, 0, 0.351);
 }
 
-header:hover #headliner h1, .card:hover h2, .card:hover h3 {
-    color: black;
+.card:hover h3 
+{
+    color: rgb(0, 0, 0);
 }
 
-header:hover {
-    background-color: lightslategray;
-    box-shadow: 0px 0px 60px 60px rgba(0, 200, 255, 0.599);
-    transition: all 0.5s ease-in-out;
-}
-
-.column {
-    flex-basis: 33.33%;
-    height: auto; /* you can adjust the height to fit your design */
-}
-
-ul {
-    background-color: rgba(0, 0, 0, 0.313);
-    border-radius: 10px;
-    border: 1px solid black;
-    padding-left: 40px; 
-    padding-top: 20px;
-    padding-bottom: 20px; 
-}
-ul li {
-    padding-top: 5px;
-    padding-bottom: 5px;
- 
-}
-
-ul li a {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-decoration: none;
-    color: black;
-}
-
-ul li a:visited {
+.card:hover [value="Send Message"] 
+{
     color: white;
 }
 
-ul li a:hover {
-    color: rgba(0, 200, 255, 0.599);
-    transition: all 0.5s ease-in-out;
+.column 
+{
+    flex-basis: 33.33%;
+    height: auto;
 }
 
-
-@media screen and (max-width: 468px) {
-    #container {
-        flex-direction: column;
-    }
-
-    .card {
-        flex-basis: 100%;
-    }
-}  
-
-.full-width {
-    width: 100%;
-    height: 25px;
-    margin-bottom: 25px;
-    border-radius: 10px;
-    border: 1px solid black;
-}
-
-.centered-button {
+.centered-button 
+{
     display: block;
     margin: 0 auto;
     width: 200px;
@@ -183,48 +196,85 @@ ul li a:hover {
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.351);
 }
 
-input[type="submit"][value="Send Message"] {
+.centered-button:hover 
+{
+    background-color: #4666a37f;
+}
+
+.full-width 
+{
+    width: 100%;
+    height: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+header:hover #headliner h1, .card:hover h2 
+{
     color: rgb(255, 255, 255);
-    text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.515);
-    padding: 10px 20px;
-    margin-bottom: 60px;
-  }
-
-  ::-webkit-input-placeholder { /* WebKit browsers */
-    color: cornflowerblue;
-  }
-  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: cornflowerblue;
-    opacity: 1;
-  }
-  ::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color: cornflowerblue;
-    opacity: 1;
-  }
-  :-ms-input-placeholder { /* Internet Explorer 10+ */
-    color: cornflowerblue;
-  }
-  ::placeholder { /* Modern browsers */
-    color: cornflowerblue;
-  }
-
-input[type="text"],
-input[type="email"] {
-  padding-left: 15px;
 }
 
-#form-title {
-    margin-top: 20px;
+.image-container 
+{   
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
 }
 
-.image-container img {
-    /* set initial filter to grayscale */
+.image-container img 
+{
     filter: grayscale(0%);
-    /* set transition property to create a smooth effect */
     transition: all 0.5s ease-in-out;
 }
   
-.image-container img:hover {
-    /* change filter to remove grayscale effect on hover */
+.image-container img:hover 
+{
     filter: grayscale(0%);
+}
+
+.list:hover 
+{
+    color: black;
+    background-color: #405e95d4;
+}
+
+@media screen and (max-width: 468px) 
+{
+    #container 
+    {
+        flex-direction: column;
+    }
+
+    .card 
+    {
+        flex-basis: 100%;
+    }
+}  
+
+::-webkit-input-placeholder 
+{
+    color: cornflowerblue;
+}
+
+:-moz-placeholder 
+{
+    color: cornflowerblue;
+    opacity: 1;
+}
+
+::-moz-placeholder 
+{
+    color: cornflowerblue;
+    opacity: 1;
+}
+
+:-ms-input-placeholder 
+{
+    color: cornflowerblue;
+}
+
+::placeholder 
+{
+    color: cornflowerblue;
 }
